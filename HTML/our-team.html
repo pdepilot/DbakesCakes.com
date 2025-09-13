@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team | DbakesCakes</title>
+    <link rel="stylesheet" href="../CSS/our-team.css" />
+    <link rel="icon" href="../images/generated-image.png" />
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div class="first-head">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="sugar" id="navbar">
+      <nav class="cream">
+        <img
+          src="../images/generated-image.png"
+          alt="Logo"
+          class="logo"
+          width="50px"
+        />
+
+        <span class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-cake-candles"></i>
+        </span>
+
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">Meet The CEO</a></li>
+          <li><a href="mission.html" class="active">Our Mission</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="welcome-apply.html">Apply Now</a></li>
+          <li><a href="Cake-GALLERY.HTML">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Team Section -->
+    <section id="our-team" class="team-section">
+      <div class="container">
+        <h2 class="section-title">Our Master Bakers</h2>
+        <p class="section-subtitle">
+          Meet the talented team behind DbakesCakes' delicious creations
+        </p>
+
+        <div class="team-grid">
+          <!-- Team Member 1 -->
+          <div class="team-member">
+            <div class="member-image-container">
+              <img
+                src="../images/FB_IMG_1754164313331.jpg"
+                alt="Chef Danielle"
+                class="member-image"
+              />
+            </div>
+            <div class="member-info">
+              <h3>Chef Dera Udo Obasi</h3>
+              <p class="position">CEO | Head Pastry Chef</p>
+              <div class="specialty">
+                <span class="tool-icon">🎂</span>
+                <span>Specialty: Wedding Cakes</span>
+              </div>
+              <div class="specialty">
+                <span class="tool-icon">🧁</span>
+                <span>Expertise: French Patisserie</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="team-member">
+            <div class="member-image-container">
+              <img
+                src="../images/file_000000006984620abc12539036f04a0e.png"
+                alt="Chef Gift"
+                class="member-image"
+              />
+            </div>
+            <div class="member-info">
+              <h3>Chef Precious Gift</h3>
+              <p class="position">Chocolate Specialist</p>
+              <div class="specialty">
+                <span class="tool-icon">🍫</span>
+                <span>Specialty: Chocolate Sculptures</span>
+              </div>
+              <div class="specialty">
+                <span class="tool-icon">🍪</span>
+                <span>Expertise: Modern Desserts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="team-member">
+            <div class="member-image-container">
+              <img
+                src="images/chef-emily.jpg"
+                alt="Chef Emily"
+                class="member-image"
+              />
+            </div>
+            <div class="member-info">
+              <h3>Chef Emily</h3>
+              <p class="position">Baking Instructor</p>
+              <div class="specialty">
+                <span class="tool-icon">🥖</span>
+                <span>Specialty: Artisan Breads</span>
+              </div>
+              <div class="specialty">
+                <span class="tool-icon">👩‍🍳</span>
+                <span>Expertise: Baking Science</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="expandedImage" />
+      <div id="caption"></div>
+    </div>
+
+
+
+
+
+     <footer class="footer">
+      <div class="footer-container">
+
+
+        <!-- Newsletter & Academy Section -->
+
+        <div class="footer-section">
+          <h3>🍰 Sweeten Your Inbox!</h3>
+          <p>
+            Subscribe for baking tips, academy updates, and exclusive offers!
+          </p>
+
+          <!-- Formspree Form -->
+
+
+          <form
+            class="newsletter-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email..."
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <div class="footer-highlights">
+            <span>🧁 Shop Pastries</span>
+            <span>👩‍🍳 Baking Classes</span>
+            <span>🎂 Custom Orders</span>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+
+        <div class="footer-section">
+          <h3>📬 Contact Us</h3>
+          <p><strong>Email:</strong> hello@dbcakes.com</p>
+          <p><strong>Phone:</strong> 23480000000</p>
+          <p><strong>Address:</strong> 123 Owerri , Imo State.</p>
+
+          <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
+          <p>Master the art of pastry with our expert-led classes!</p>
+          <a href="#" class="cta-button">Explore Courses</a>
+        </div>
+
+        <!-- Social & Quick Links -->
+
+        <div class="footer-section">
+          <h3>🎀 Follow Our Sugar Rush!</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">🧁</a>
+            <a href="#" aria-label="Facebook">🍰</a>
+            <a href="#" aria-label="Pinterest">👩‍🍳</a>
+          </div>
+
+          <h3 style="margin-top: 20px">🍪 Quick Links</h3>
+          <p><a href="#">Shop Now</a></p>
+          <p><a href="#">Apply here</a></p>
+          <p><a href="About.html">About Us</a></p>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <p>
+          💖
+          <strong
+            >DbakesCakes: Where Every Bite and Lesson is a Celebration!</strong
+          >
+        </p>
+        <p>© 2024 DbakesCakes | Pastry Shop & Baking Academy</p>
+      </div>
+    </footer>
+
+
+
+    <button id="scrollTopBtn" aria-label="Scroll to Top">
+    ↑</i>
+  </button>
+
+  <!-- WhatsApp Chat Bubble -->
+  <a href="https://wa.me/2349064296917" class="whatsapp-chat" target="_blank">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+      alt="WhatsApp"
+    />
+  </a>
+
+   
+    <script src="../JAVASCRIPT/our-team.js"></script>
+  </body>
+</html>

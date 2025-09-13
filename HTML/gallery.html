@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DbakesCakes Gallery</title>
+    <link rel="icon" href="../images/generated-image.png" />
+    <link rel="stylesheet" href="../CSS/gallery.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="first-head">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="sugar" id="navbar">
+      <nav class="cream">
+        <a href=""><img
+          src="../images/generated-image.png"
+          alt="Logo"
+          class="logo"
+          width="50px"
+        /></a>
+
+        <span class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-cake-candles"></i>
+        </span>
+
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Meet The CEO</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="welcome-apply.html">Apply Now</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+
+    <header class="gallery-header">
+        <div class="logo-title">
+            <!-- <img src="../images/generated-image.png" alt="Dbakes Logo" class="logo" /> -->
+            <div>
+                <h1 class="animated-text">Dbakes Cakes Gallery</h1>
+                <p class="subtitle">Astonishing creations, crafted with love!</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="filter-controls">
+        <input type="text" id="searchInput" placeholder="Search cakes..." />
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="birthday">Birthday</button>
+        <button class="filter-btn" data-filter="wedding">Wedding</button>
+        <button class="filter-btn" data-filter="cupcake">Cupcake</button>
+        <button class="filter-btn" data-filter="custom">Custom</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <div class="gallery-item" data-category="birthday" alt="Pink Birthday Cake">
+            <img src="../images/25 Showstopper 1st Birthday Cake Ideas to Wow Guests.jpg" alt="Pink Birthday Cake" />
+        </div>
+        <div class="gallery-item" data-category="wedding" alt="Ornate Wedding Cake">
+            <img src="../images/Ornate Wedding Cake Dripping with Sophistication.jpg" alt="Elegant White Wedding Cake" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Valentine Cupcakes">
+            <img src="../images/Passionate Kiss Cupcake Bliss_ Valentine's Affection.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="custom" alt="Beeded Cake Design">
+            <img src="../images/04d6f943-dcd6-4189-bcc2-338e76f11f08.jpg" alt="Unicorn Cake Design" />
+        </div>
+        <div class="gallery-item" data-category="birthday" alt="Superhero Cake">
+            <img src="../images/24 Stunning 50th Birthday Cake Ideas to Celebrate in Style.jpg" alt="Superhero Cake" />
+        </div>
+        <div class="gallery-item" data-category="wedding" alt="Rose Cream Wedding Cake">
+            <img src="../images/wedding cake.jpg" alt="Rose Cream Wedding Cake" />
+        </div>
+
+        <div class="gallery-item" data-category="birthday" alt="Pink Birthday Cake">
+            <img src="../images/Black Panther Drip Cake.jpg" alt="Pink Birthday Cake" />
+        </div>
+        <div class="gallery-item" data-category="wedding" alt="Elegant White Wedding Cake">
+            <img src="../images/3d392885013dab727356fccb856a5962.jpg" alt="Elegant White Wedding Cake" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+            <img src="../images/cupcake1.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+          <img src="../images/cupcake2.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+          <img src="../images/cupcake3.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+         <img src="../images/cupcake4.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+         <img src="../images/cupcake5.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+         <img src="../images/Salted Caramel Cream Cheese Cupcakes.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+         <img src="../images/cupcake6.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+         <img src="../images/cupcake7.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <div class="gallery-item" data-category="custom" alt="Strawberry Cake Design">
+          <img src="../images/1e92708d4c30a0c225cd6e2a8d6aac8b.jpg" alt="Unicorn Cake Design" />
+        </div>
+        <div class="gallery-item" data-category="custom" alt="Purple Dragon Cake Design">
+          <img src="../images/6ac8e9ec-185a-40da-9f5c-c11a64573202.jpg" alt="Unicorn Cake Design" />
+        </div>
+        <div class="gallery-item" data-category="birthday" alt="Superhero Cake">
+            <img src="../images/cake4.jpg" alt="Superhero Cake" />
+        </div>
+        <div class="gallery-item" data-category="birthday" alt="Superhero Cake">
+          <img src="../images/flamingo-ruffle-cake-featured-image--780x475.webp" alt="Superhero Cake" />
+        </div>
+        <div class="gallery-item" data-category="custom" alt="Black Dragon Cake Design">
+          <img src="../images/9374d81d9bbdc607c3653dc57adffd21.jpg" alt="Unicorn Cake Design" />
+        </div>
+        <div class="gallery-item" data-category="custom" alt="Secret Cake Design">
+         <img src="../images/7a30788d-8e3d-4e1e-a630-17bb79ad1707.jpg" alt="Unicorn Cake Design" />
+        </div>
+        <div class="gallery-item" data-category="wedding" alt="Rose Cream Wedding Cake">
+         <img src="../images/Cake amazing cake.jpg" alt="Rose Cream Wedding Cake" />
+        </div>
+        <div class="gallery-item" data-category="wedding" alt="Rose Cream Wedding Cake">
+          <img src="../images/Stunning Wedding Cake Designs_ Elegant Ideas for Your Perfect Day.jpg" alt="Rose Cream Wedding Cake" />
+         </div>
+         <div class="gallery-item" data-category="wedding" alt="Rose Cream Wedding Cake">
+          <img src="../images/4edb4c96-df65-45a1-a087-9092c4d507b2.jpg" alt="Rose Cream Wedding Cake" />
+         </div>
+        <div class="gallery-item" data-category="custom" alt="Peecock Cake Design">
+         <img src="../images/36aeeb7a-722a-48d9-831c-3ee5bca0d9e3.jpg" alt="Peecock Cake Design" />
+        </div>
+        <div class="gallery-item" data-category="custom" alt="Narrow steps Cake Design">
+          <img src="../images/e7f59fa7-1d53-4158-91d5-c64b932424f3.jpg" alt="Peecock Cake Design" />
+         </div>
+        <div class="gallery-item" data-category="cupcake" alt="Assorted Cupcakes">
+          <img src="../images/Cupcake sprinkles.jpg" alt="Assorted Cupcakes" />
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+
+
+
+
+
+
+   
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Newsletter & Academy Section -->
+        <div class="footer-section">
+          <h3>🍰 Sweeten Your Inbox!</h3>
+          <p>
+            Subscribe for baking tips, academy updates, and exclusive offers!
+          </p>
+
+          <!-- Formspree Form -->
+          <form
+            class="newsletter-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email..."
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <div class="footer-highlights">
+            <span>🧁 Shop Pastries</span>
+            <span>👩‍🍳 Baking Classes</span>
+            <span>🎂 Custom Orders</span>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section">
+          <h3>📬 Contact Us</h3>
+          <p><strong>Email:</strong> hello@dbcakes.com</p>
+          <p><strong>Phone:</strong> 23480000000</p>
+          <p><strong>Address:</strong> 123 Owerri , Imo State.</p>
+
+          <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
+          <p>Master the art of pastry with our expert-led classes!</p>
+          <a href="#course" class="cta-button">Explore Courses</a>
+        </div>
+
+        <!-- Social & Quick Links -->
+        <div class="footer-section">
+          <h3>🎀 Follow Our Sugar Rush!</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <h3 style="margin-top: 20px">🍪 Quick Links</h3>
+          <p><a href="#">Shop Now</a></p>
+          <p><a href="welcome-apply.html">Class Schedule</a></p>
+          <p><a href="about.html">About Us</a></p>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <p>
+          💖
+          <strong
+            >DbakesCakes: Where Every Bite and Lesson is a Celebration!</strong
+          >
+        </p>
+        <p>© 2024 DbakesCakes | Pastry Shop & Baking Academy</p>
+      </div>
+    </footer>
+
+
+
+    <button id="scrollTopBtn" aria-label="Scroll to Top">
+    ↑</i>
+  </button>
+
+  <!-- WhatsApp Chat Bubble -->
+  <a href="https://wa.me/2349064296917" class="whatsapp-chat" target="_blank">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+      alt="WhatsApp"
+    />
+  </a>
+
+
+    <script src="../JAVASCRIPT/gallery.js"></script>
+</body>
+
+</html>

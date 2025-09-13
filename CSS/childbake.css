@@ -1,0 +1,284 @@
+/* Root variables for color palette */
+:root {
+  --primary: #f7c6b7;
+  --secondary: #fff3e6;
+  --accent: #ff8fa3;
+  --dark: #333;
+  --white: #fff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --glass: rgba(255, 255, 255, 0.3);
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #fff9f5, #fff0e5);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* First Header */
+
+.first-head {
+  background-color: #eee0e0;
+  padding: 10px 0;
+  text-align: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: red;
+  transform: translateY(-3px);
+}
+
+/* Navigation */
+.sugar {
+  background-color: #f5c8c8;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.sugar.scrolled {
+  background-color: #eee0e0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+.sugar.scrolled .logo {
+  height: 50px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.logo {
+  height: 60px;
+  width: auto !important;
+  transition: all 0.3s ease;
+}
+
+#nav-menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+#nav-menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#nav-menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+#nav-menu li a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.style-cookie {
+  padding: 40px 20px;
+  background: var(--white);
+}
+
+.main-cookie {
+  max-width: 1200px;
+  margin: auto;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px var(--shadow);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-cookie h1 {
+  color: var(--accent);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main-cookie h3 {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.art1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.art1 img {
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.art1 > div {
+  flex: 1;
+}
+
+/* Course Details */
+.course-details {
+  background: var(--secondary);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+  border-left: 6px solid black;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+/* Note Box */
+.note-box {
+  background-color: #fff7e6;
+  border-left: 5px solid black;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Timetable */
+.day-card {
+  background-color: #ffe6f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow);
+  margin: 20px 0;
+}
+
+.day-card h3 {
+  color: var(--accent);
+}
+
+.safety,
+.activity {
+  font-weight: bold;
+  color: #d95087;
+}
+
+/* Benefits Section */
+.benefits {
+  background: #f0f9ff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px var(--shadow);
+}
+
+.benefits p {
+  margin: 10px 0;
+}
+
+/* Register CTA */
+.register {
+  background-color: #fff1f1;
+  padding: 20px;
+  border-left: 6px solid black;
+  border-radius: 12px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.register h3 {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.register .emoji {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Apply Button */
+button {
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin: 30px auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #ff6b8a;
+  transform: translateY(-2px);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .art1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: var(--secondary);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

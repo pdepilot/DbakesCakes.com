@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Our Founder | DbakesCakes</title>
+    <link rel="stylesheet" href="../CSS/about.css" />
+    <link rel="icon" href="../images/generated-image.png" />
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div class="first-head">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="sugar" id="navbar">
+      <nav class="cream">
+        <a href=""><img
+          src="../images/generated-image.png"
+          alt="Logo"
+          class="logo"
+          width="50px"
+        /></a>
+
+        <span class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-cake-candles"></i>
+        </span>
+
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">Meet The CEO</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="welcome-apply.html">Apply Now</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <section class="ceo-section">
+      <div class="ceo-header">
+        <h2>Our Sweet Visionary</h2>
+        <p>
+          The creative genius behind every delicious creation at DbakesCakes
+        </p>
+      </div>
+
+      <div class="ceo-content">
+        <!-- Clickable CEO Image -->
+        <div class="ceo-image-container" onclick="openModal()">
+          <img
+            src="../images/FB_IMG_1754164313331.jpg"
+            alt="Chef Danielle Baker, Founder of DbakesCakes"
+            class="ceo-image"
+            id="ceoImg"
+          />
+        </div>
+
+        <div class="ceo-bio">
+          <h3>Chef Dera Udo Obasi</h3>
+          <p>
+            With over 15 years of patisserie expertise trained in Paris and
+            Tokyo, Chef Danielle transformed her childhood passion into
+            DbakesCakes - a beloved pastry empire and award-winning baking
+            academy.
+          </p>
+
+          <div class="ceo-quote">
+            "Baking is more than ingredients - it's love, science, and magic
+            woven together."
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <p class="ceo-signature">- Dera udo Obasi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="ceoModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="expandedCeoImg" />
+    </div>
+
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Newsletter & Academy Section -->
+        <div class="footer-section">
+          <h3>🍰 Sweeten Your Inbox!</h3>
+          <p>
+            Subscribe for baking tips, academy updates, and exclusive offers!
+          </p>
+
+          <!-- Formspree Form -->
+          <form
+            class="newsletter-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email..."
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <div class="footer-highlights">
+            <span>🧁 Shop Pastries</span>
+            <span>👩‍🍳 Baking Classes</span>
+            <span>🎂 Custom Orders</span>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section">
+          <h3>📬 Contact Us</h3>
+          <p><strong>Email:</strong> hello@dbcakes.com</p>
+          <p><strong>Phone:</strong> 23480000000</p>
+          <p><strong>Address:</strong> 123 Owerri , Imo State.</p>
+
+          <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
+          <p>Master the art of pastry with our expert-led classes!</p>
+          <a href="#" class="cta-button">Explore Courses</a>
+        </div>
+
+        <!-- Social & Quick Links -->
+        <div class="footer-section">
+          <h3>🎀 Follow Our Sugar Rush!</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <h3 style="margin-top: 20px">🍪 Quick Links</h3>
+          <p><a href="gallery.html">Gallery</a></p>
+          <p><a href="welcome-apply.html">Class Schedule</a></p>
+          <p><a href="#">About Us</a></p>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <p>
+          💖
+          <strong
+            >DbakesCakes: Where Every Bite and Lesson is a Celebration!</strong
+          >
+        </p>
+        <p>© 2024 DbakesCakes | Pastry Shop & Baking Academy</p>
+      </div>
+    </footer>
+
+
+
+    <button id="scrollTopBtn" aria-label="Scroll to Top">
+    ↑</i>
+  </button>
+
+  <!-- WhatsApp Chat Bubble -->
+  <a href="https://wa.me/2349064296917" class="whatsapp-chat" target="_blank">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+      alt="WhatsApp"
+    />
+  </a>
+
+
+    <script src="../JAVASCRIPT/about.js"></script>
+  </body>
+</html>

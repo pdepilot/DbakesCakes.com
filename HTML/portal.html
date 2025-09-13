@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DbakesCake Academy Application Portal</title>
+    <link rel="icon" href="../images/generated-image.png" />
+    <link rel="stylesheet" href="../CSS/portal.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+    <div class="hero-content">
+      <h1>Apply to DbakesCake Academy</h1>
+      <p>
+        Turn your passion for baking into a profession. Join our world-class
+        academy and become a certified cake artist.
+      </p>
+    </div>
+    <button class="admin-login-btn" onclick="showAdminLogin()">Admin Login</button>
+  </header>
+
+  <section class="application-form">
+    <form id="applicationForm">
+      <!-- Step 1 -->
+      <div class="form-step active">
+        <h2>Personal Information</h2>
+        <label>Full Name</label>
+        <input type="text" name="fullname" required />
+        <label>Email</label>
+        <input type="email" name="email" required />
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required />
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step">
+        <h2>Program Selection</h2>
+        <label>Select Course</label>
+        <select name="course" required>
+          <option value="">-- Choose a Course --</option>
+          <option>Science Of Pastry Art Of Cookies</option>
+          <option>Science Of Cake Baking <br />
+          (Confectionary's Art Mastry)</option>
+          <option>Children's Baking Classes <br />
+          (Confectionary's Art)</option>
+          <option>Science Of Bread Making</option>
+        </select>
+        <label>Preferred Start Date</label>
+        <input type="date" name="startdate" required />
+        <div class="step-buttons">
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="form-step">
+        <h2>Experience & Goals</h2>
+        <label>Previous Baking Experience</label>
+        <textarea name="experience" rows="4"></textarea>
+        <label>Why do you want to join?</label>
+        <textarea name="goals" rows="4" required></textarea>
+        <div class="form-group">
+          <label for="reference">How did you hear about us?</label>
+          <select id="reference" name="reference" required>
+            <option value="">Select</option>
+            <option value="social">Social Media</option>
+            <option value="friend">Friend/Family</option>
+            <option value="event">Event/Workshop</option>
+            <option value="search">Search Engine</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="step-buttons">
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="submit" class="submit-btn">Submit Application</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <h2>Application Submitted 🎉</h2>
+      <p>
+        Thank you for applying to DbakesCake Academy! Our admissions team will
+        contact you soon.
+      </p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <!-- Admin Login -->
+  <div class="container" id="loginContainer">
+    <h2>Admin Login</h2>
+    <input type="text" id="adminUser" placeholder="Username" required />
+    <input type="password" id="adminPass" placeholder="Password" required />
+    <button onclick="loginAdmin()">Login</button>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div class="container" id="adminDashboard">
+    <button class="logout-btn" onclick="logoutAdmin()">Logout</button>
+    <h2>Admin Dashboard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Course</th>
+          <th>Start Date</th>
+          <th>Experience</th>
+          <th>Motivation</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="submissionsTable"></tbody>
+    </table>
+  </div>
+
+
+     
+
+    <script src="../JAVASCRIPT/portal.js"></script>
+  </body>
+</html>
