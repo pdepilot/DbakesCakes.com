@@ -1273,9 +1273,6 @@ nav ul li a:hover::after {
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
 }
 
-
-
-
 /* Stellar Scroll To Top Button */
 #scrollTopBtn {
   position: fixed;
