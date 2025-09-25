@@ -6,10 +6,43 @@
   <title>Your Culinary Journey Begins</title>
   <link rel="icon" href="../images/generated-image.png" />
   <link rel="stylesheet" href="../CSS/Welcome-apply.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="first-head">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="sugar" id="navbar">
+      <nav class="cream">
+        <a href=""><img
+          src="../images/generated-image.png"
+          alt="Logo"
+          class="logo"
+          width="50px"
+        /></a>
+
+        <span class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-cake-candles"></i>
+        </span>
+
+        <ul id="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">Meet The CEO</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="welcome-apply.html">Apply Now</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
 
 <section class="welcome-section">
   <div class="welcome-text">
@@ -30,6 +63,94 @@
     <img src="../images/Apply-image.jpg" alt="Happy students at Culinary Academy" />
   </div>
 </section>
+
+ <footer class="footer">
+      <div class="footer-container">
+        <!-- Newsletter & Academy Section -->
+        <div class="footer-section">
+          <h3>🍰 Sweeten Your Inbox!</h3>
+          <p>
+            Subscribe for baking tips, academy updates, and exclusive offers!
+          </p>
+
+          <!-- Formspree Form -->
+          <form
+            class="newsletter-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email..."
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <div class="footer-highlights">
+            <span>🧁 Shop Pastries</span>
+            <span>👩‍🍳 Baking Classes</span>
+            <span>🎂 Custom Orders</span>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section">
+          <h3>📬 Contact Us</h3>
+          <p><strong>Email:</strong> hello@dbcakes.com</p>
+          <p><strong>Phone:</strong> 23480000000</p>
+          <p><strong>Address:</strong> 123 Owerri , Imo State.</p>
+
+          <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
+          <p>Master the art of pastry with our expert-led classes!</p>
+          <a href="#course" class="cta-button">Explore Courses</a>
+        </div>
+
+        <!-- Social & Quick Links -->
+        <div class="footer-section">
+          <h3>🎀 Follow Our Sugar Rush!</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <h3 style="margin-top: 20px">🍪 Quick Links</h3>
+          <p><a href="#">Shop Now</a></p>
+          <p><a href="welcome-apply.html">Class Schedule</a></p>
+          <p><a href="about.html">About Us</a></p>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <p>
+          💖
+          <strong
+            >DbakesCakes: Where Every Bite and Lesson is a Celebration!</strong
+          >
+        </p>
+        <p>© 2024 DbakesCakes | Pastry Shop & Baking Academy</p>
+      </div>
+    </footer>
+
+
+
+    <button id="scrollTopBtn" aria-label="Scroll to Top">
+    ↑</i>
+  </button>
+
+  <!-- WhatsApp Chat Bubble -->
+  <a href="https://wa.me/2349064296917" class="whatsapp-chat" target="_blank">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+      alt="WhatsApp"
+    />
+  </a>
+<script src="../JAVASCRIPT/welcome-apply.js"></script>
 
 </body>
 </html>
