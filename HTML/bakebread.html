@@ -16,6 +16,10 @@
     />
   </head>
   <body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Your Navbar -->
     <div class="first-head">
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -27,15 +31,15 @@
 
     <div class="sugar" id="navbar">
       <nav class="cream">
-        <img
+        <a href="index.html"><img
           src="../images/generated-image.png"
           alt="Logo"
           class="logo"
           width="50px"
-        />
+        /></a>
 
-        <span class="menu-toggle" onclick="toggleMenu()">
-          <i class="fa-solid fa-cake-candles"></i>
+        <span class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-cake-candles" id="menu-icon"></i>
         </span>
 
         <ul id="nav-menu">
@@ -49,221 +53,296 @@
       </nav>
     </div>
 
-    <!-- Header Section -->
-    <header class="header">
-      <div class="header-content">
-        <h1>Bread Mastery Program</h1>
-        <p class="tagline">6-Month Specialized Bread Baking Course</p>
-      </div>
-    </header>
+    <!-- Bread Course Content -->
+    <div class="style-bread">
+        <div class="bread-decoration bread-1"></div>
+        <div class="bread-decoration bread-2"></div>
+        
+        <div class="main-bread">
+            <h1>Bread Mastery Program</h1>
+            
+            <div class="art1">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73" alt="Artisan Bread Display" />
+                <div>
+                    <p>
+                        Our intensive 6-month Bread Mastery Program is designed to transform
+                        baking enthusiasts into professional artisan bakers. The curriculum
+                        covers everything from foundational techniques to advanced specialty
+                        breads, with optional internship opportunities for top students.
+                    </p>
+                    
+                    <div class="info-highlight">
+                        <p>
+                            <strong>Duration:</strong> 6 months <br />
+                            Monday - Friday 10AM – 2PM
+                        </p>
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="content-main">
-        <section class="program-highlights">
-          <h2>Program Overview</h2>
-          <p>
-            Our intensive 6-month Bread Mastery Program is designed to transform
-            baking enthusiasts into professional artisan bakers. The curriculum
-            covers everything from foundational techniques to advanced specialty
-            breads, with optional internship opportunities for top students.
-          </p>
+                        <p>
+                            <strong>Next Start Date:</strong> October 18th, 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-          <div class="highlight-grid">
-            <div class="highlight-card">
-              <h3>Core Training</h3>
-              <p>
-                3 months intensive artisan bread training with daily hands-on
-                practice
-              </p>
-            </div>
-            <div class="highlight-card">
-              <h3>Advanced Techniques</h3>
-              <p>
-                3 months specialized training in international and fusion bread
-                baking
-              </p>
-            </div>
-            <div class="highlight-card">
-              <h3>Internship</h3>
-              <p>
-                Optional 3-month placement at our 5-star partner hotel for top
-                graduates
-              </p>
-            </div>
-          </div>
-        </section>
+            <section class="program-highlights">
+                <h2>Program Highlights</h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <h3>Core Training</h3>
+                        <p>
+                            3 months intensive artisan bread training with daily hands-on
+                            practice
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Advanced Techniques</h3>
+                        <p>
+                            3 months specialized training in international and fusion bread
+                            baking
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Internship</h3>
+                        <p>
+                            Optional 3-month placement at our 5-star partner hotel for top
+                            graduates
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="pricing-section">
-          <h2>Program Investment</h2>
-          <div class="pricing-options">
-            <div class="price-card">
-              <h3>One-Time Payment</h3>
-              <div class="price-amount">₦250,000</div>
-              <p><strong>Save ₦100,000</strong> with full payment</p>
-            </div>
-            <div class="price-card">
-              <h3>Installment Plan</h3>
-              <div class="price-amount">₦350,000</div>
-              <p>1st: ₦100,000 (before enrollment)</p>
-              <p>2nd: ₦50,000 (by 6th week)</p>
-              <p>3rd: ₦100,000 (by 9th week)</p>
-            </div>
-            <div class="price-card">
-              <h3>Registration & Uniforms</h3>
-              <div class="price-amount">₦20,000</div>
-              <p>
-                1 chef uniforms, starter kit, apron, and baking tools
-              </p>
-            </div>
-          </div>
-          <!-- <p>
-            <strong>Next Start Date:</strong> October 18th, 2024 |
-            <strong>Schedule:</strong> Mon-Fri, 10AM-2PM
-          </p> -->
-        </section>
-      </div>
+            <section class="pricing-section">
+                <h2>Program Investment</h2>
+                <div class="pricing-options">
+                    <div class="price-card">
+                        <h3>One-Time Payment</h3>
+                        <div class="price-amount">₦250,000</div>
+                        <p><strong>Save ₦100,000</strong> with full payment</p>
+                    </div>
+                    <div class="price-card">
+                        <h3>Installment Plan</h3>
+                        <div class="price-amount">₦350,000</div>
+                        <p>1st: ₦100,000 (before enrollment)</p>
+                        <p>2nd: ₦50,000 (by 6th week)</p>
+                        <p>3rd: ₦100,000 (by 9th week)</p>
+                    </div>
+                    <div class="price-card">
+                        <h3>Registration & Uniforms</h3>
+                        <div class="price-amount">₦20,000</div>
+                        <p>
+                            1 chef uniform, starter kit, apron, and baking tools
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-      <div class="content-image">
-        <img
-          src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73"
-          alt="Artisan Bread Display"
-        />
-      </div>
+            <section class="curriculum">
+                <h2>Curriculum Breakdown</h2>
+
+                <div class="module">
+                    <h3>Introduction to Bread Baking</h3>
+                    <ul>
+                        <li>Kitchen equipment, safety, and hygiene</li>
+                        <li>Bread history, types, and science</li>
+                        <li>Yeast fermentation and dough chemistry</li>
+                        <li>Importance of gluten, proofing, and kneading</li>
+                        <li>Introduction to flour types and hydration</li>
+                        <li>Bread baking terminologies</li>
+                        <li>HACCP & food safety practices</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Foundational Breads</h3>
+                    <ul>
+                        <li>White sandwich bread</li>
+                        <li>Dinner rolls & pull-apart rolls</li>
+                        <li>Whole wheat & multigrain loaves</li>
+                        <li>Banana bread, coconut bread</li>
+                        <li>Sardine bread, coconut milk bread</li>
+                        <li>Chocolate babka, sugar swirl bread</li>
+                        <li>Cinnamon rolls</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Intermediate Doughs & Enriched Breads</h3>
+                    <ul>
+                        <li>Brioche, milk bread, and challah</li>
+                        <li>Sourdough starter creation and maintenance</li>
+                        <li>Focaccia (classic and stuffed)</li>
+                        <li>Bagels and pretzels</li>
+                        <li>Pain de mie and dinner knots</li>
+                        <li>Stuffed breads (cheese, spinach, garlic)</li>
+                        <li>Vegan and gluten-free breads</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Artisan Bread Making</h3>
+                    <ul>
+                        <li>French baguettes</li>
+                        <li>Sourdough batards and boules</li>
+                        <li>Ciabatta</li>
+                        <li>Rye bread & rustic loaves</li>
+                        <li>No-knead Dutch oven baking</li>
+                        <li>Cold fermentation and autolyse method</li>
+                        <li>Poolish, Biga, and Levain techniques</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>International Breads</h3>
+                    <ul>
+                        <li>Indian naan and paratha</li>
+                        <li>Middle Eastern pita and khubz</li>
+                        <li>African agege bread & coconut rolls</li>
+                        <li>Caribbean hard dough bread</li>
+                        <li>Turkish simit</li>
+                        <li>Italian focaccia & grissini</li>
+                        <li>Chinese steamed buns (mantou, bao)</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Bread Accompaniments & Spreads</h3>
+                    <ul>
+                        <li>Garlic butter and herb oils</li>
+                        <li>Hummus, tzatziki, baba ganoush</li>
+                        <li>Homemade jams & custards</li>
+                        <li>Compound butters (cinnamon, vanilla, honey)</li>
+                        <li>Cheese spreads, sandwich sauces</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Bread-based Street Foods & Fusion Baking</h3>
+                    <ul>
+                        <li>Bread pizza & toasties</li>
+                        <li>Stuffed buns (meat, cheese, veggies)</li>
+                        <li>Bread rolls for sliders</li>
+                        <li>Sandwich development class</li>
+                        <li>Canapés using artisan bases</li>
+                        <li>Cultural fusion bread recipes</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Bread Art & Presentation</h3>
+                    <ul>
+                        <li>Shaping and scoring techniques</li>
+                        <li>Decorative rolls and braids</li>
+                        <li>The art of proofing baskets</li>
+                        <li>Oven steam control and crust development</li>
+                        <li>Bread display and photography tips</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Menu Planning & Bakery Operations</h3>
+                    <ul>
+                        <li>Recipe costing and ingredient budgeting</li>
+                        <li>Menu curation for bakeries and cafes</li>
+                        <li>Inventory tracking and bulk ordering</li>
+                        <li>Production timelines and baking schedules</li>
+                        <li>Packaging, shelf-life, and storage</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Business & Certification</h3>
+                    <ul>
+                        <li>Starting a home bakery or micro-bakery</li>
+                        <li>Branding, marketing, and pricing strategy</li>
+                        <li>Customer service & delivery systems</li>
+                        <li>Internship placements for top students</li>
+                        <li>Certificate of Completion in Bread Baking Mastery</li>
+                    </ul>
+                </div>
+
+                <div class="apply-btn-container">
+                    <a href="Welcome-apply.html" class="cta-button">Enroll in Bread Mastery Program</a>
+                </div>
+            </section>
+        </div>
     </div>
 
-    <!-- Curriculum Section -->
-    <div class="container">
-      <section class="curriculum">
-        <h2>Curriculum Breakdown</h2>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Newsletter & Academy Section -->
+            <div class="footer-section">
+                <h3>🍰 Sweeten Your Inbox!</h3>
+                <p>
+                    Subscribe for baking tips, academy updates, and exclusive offers!
+                </p>
 
-        <div class="module">
-          <h3>Introduction to Bread Baking</h3>
-          <ul>
-            <li>Kitchen equipment, safety, and hygiene</li>
-            <li>Bread history, types, and science</li>
-            <li>Yeast fermentation and dough chemistry</li>
-            <li>Importance of gluten, proofing, and kneading</li>
-            <li>Introduction to flour types and hydration</li>
-            <li>Bread baking terminologies</li>
-            <li>HACCP & food safety practices</li>
-          </ul>
+                <!-- Formspree Form -->
+                <form
+                    class="newsletter-form"
+                    action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST"
+                >
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email..."
+                        required
+                    />
+                    <button type="submit">Subscribe</button>
+                </form>
+
+                <div class="footer-highlights">
+                    <span>🧁 Shop Pastries</span>
+                    <span>👩‍🍳 Baking Classes</span>
+                    <span>🎂 Custom Orders</span>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>📬 Contact Us</h3>
+                <p><strong>Email:</strong> hello@dbcakes.com</p>
+                <p><strong>Phone:</strong> 23480000000</p>
+                <p><strong>Address:</strong> 123 Owerri , Imo State.</p>
+
+                <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
+                <p>Master the art of pastry with our expert-led classes!</p>
+                <a href="#course" class="footer-cta-button">Explore Courses</a>
+            </div>
+
+            <!-- Social & Quick Links -->
+            <div class="footer-section">
+                <h3>🎀 Follow Our Sugar Rush!</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <h3 style="margin-top: 20px">🍪 Quick Links</h3>
+                <p><a href="#">Shop Now</a></p>
+                <p><a href="welcome-apply.html">Class Schedule</a></p>
+                <p><a href="about.html">About Us</a></p>
+            </div>
         </div>
 
-        <div class="module">
-          <h3>Foundational Breads</h3>
-          <ul>
-            <li>White sandwich bread</li>
-            <li>Dinner rolls & pull-apart rolls</li>
-            <li>Whole wheat & multigrain loaves</li>
-            <li>Banana bread, coconut bread</li>
-            <li>Sardine bread, coconut milk bread</li>
-            <li>Chocolate babka, sugar swirl bread</li>
-            <li>Cinnamon rolls</li>
-          </ul>
+        <hr class="footer-divider" />
+
+        <div class="footer-bottom">
+            <p>
+                💖
+                <strong
+                >DbakesCakes: Where Every Bite and Lesson is a Celebration!</strong
+                >
+            </p>
+            <p>© 2024 DbakesCakes | Pastry Shop & Baking Academy</p>
         </div>
+    </footer>
 
-        <div class="module">
-          <h3>Intermediate Doughs & Enriched Breads</h3>
-          <ul>
-            <li>Brioche, milk bread, and challah</li>
-            <li>Sourdough starter creation and maintenance</li>
-            <li>Focaccia (classic and stuffed)</li>
-            <li>Bagels and pretzels</li>
-            <li>Pain de mie and dinner knots</li>
-            <li>Stuffed breads (cheese, spinach, garlic)</li>
-            <li>Vegan and gluten-free breads</li>
-          </ul>
-        </div>
-
-        <div class="module">
-          <h3>Artisan Bread Making</h3>
-          <ul>
-            <li>French baguettes</li>
-            <li>Sourdough batards and boules</li>
-            <li>Ciabatta</li>
-            <li>Rye bread & rustic loaves</li>
-            <li>No-knead Dutch oven baking</li>
-            <li>Cold fermentation and autolyse method</li>
-            <li>Poolish, Biga, and Levain techniques</li>
-          </ul>
-        </div>
-
-        <div class="module">
-          <h3>International Breads</h3>
-          <ul>
-            <li>Indian naan and paratha</li>
-            <li>Middle Eastern pita and khubz</li>
-            <li>African agege bread & coconut rolls</li>
-            <li>Caribbean hard dough bread</li>
-            <li>Turkish simit</li>
-            <li>Italian focaccia & grissini</li>
-            <li>Chinese steamed buns (mantou, bao)</li>
-          </ul>
-        </div>
-
-        <div class="module">
-          <h3>Bread Accompaniments & Spreads</h3>
-          <ul>
-            <li>Garlic butter and herb oils</li>
-            <li>Hummus, tzatziki, baba ganoush</li>
-            <li>Homemade jams & custards</li>
-            <li>Compound butters (cinnamon, vanilla, honey)</li>
-            <li>Cheese spreads, sandwich sauces</li>
-          </ul>
-        </div>
-
-        <div class="module">
-          <h3>Bread-based Street Foods & Fusion Baking</h3>
-          <ul>
-            <li>Bread pizza & toasties</li>
-            <li>Stuffed buns (meat, cheese, veggies)</li>
-            <li>Bread rolls for sliders</li>
-            <li>Sandwich development class</li>
-            <li>Canapés using artisan bases</li>
-            <li>Cultural fusion bread recipes</li>
-          </ul>
-        </div>
-
-        <div class="module">
-          <h3>Bread Art & Presentation</h3>
-          <ul>
-            <li>Shaping and scoring techniques</li>
-            <li>Decorative rolls and braids</li>
-            <li>The art of proofing baskets</li>
-            <li>Oven steam control and crust development</li>
-            <li>Bread display and photography tips</li>
-          </ul>
-        </div>
-
-        <div class="module">
-          <h3>Menu Planning & Bakery Operations</h3>
-          <ul>
-            <li>Recipe costing and ingredient budgeting</li>
-            <li>Menu curation for bakeries and cafes</li>
-            <li>Inventory tracking and bulk ordering</li>
-            <li>Production timelines and baking schedules</li>
-            <li>Packaging, shelf-life, and storage</li>
-          </ul>
-        </div>
-
-        <div class="module">
-          <h3>Business & Certification</h3>
-          <ul>
-            <li>Starting a home bakery or micro-bakery</li>
-            <li>Branding, marketing, and pricing strategy</li>
-            <li>Customer service & delivery systems</li>
-            <li>Internship placements for top students</li>
-            <li>Certificate of Completion in Bread Baking Mastery</li>
-          </ul>
-        </div>
-
-        <center>
-          <a href="Welcome-apply.html" class="cta-button">Enroll in Bread Mastery Program</a>
-        </center>
-      </section>
-    </div>
-
-    <script src="../JAVASCRIPT/bakebread.js"></script>
+    <script src="../JAVASCRIPT/bakebread.js">
+       
+    </script>
   </body>
 </html>

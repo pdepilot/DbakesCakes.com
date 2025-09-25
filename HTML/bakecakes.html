@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="../images/generated-image.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Baking and Decoration Course | DbakesCakes Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="../CSS/bakecakes.css" />
-    <title>Cakes</title>
-    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta name="description" content="Join our Cake Baking and Decoration Course at DbakesCakes Academy. Learn essential baking skills, creative decorating techniques, and hands-on experience to master the art of confectionery. Enroll now for a sweet journey into cake artistry!" />
+    <meta name="keywords" content="Cake Baking Course, Cake Decoration Course, Confectionery Art, Baking Classes, Cake Decorating Techniques, Hands-on Baking, Cake Design, Baking Academy, Pastry School, Cake Artistry" />
+    <meta name="author" content="DbakesCakes Academy" />
   </head>
   <body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Your Navbar -->
     <div class="first-head">
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -25,15 +31,15 @@
 
     <div class="sugar" id="navbar">
       <nav class="cream">
-        <img
+        <a href="index.html"><img
           src="../images/generated-image.png"
           alt="Logo"
           class="logo"
           width="50px"
-        />
+        /></a>
 
-        <span class="menu-toggle" onclick="toggleMenu()">
-          <i class="fa-solid fa-cake-candles"></i>
+        <span class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-cake-candles" id="menu-icon"></i>
         </span>
 
         <ul id="nav-menu">
@@ -47,118 +53,202 @@
       </nav>
     </div>
 
-
-
-
-    
+    <!-- Cake Course Content -->
     <div class="style-bakecake">
-      <div class="main-cake">
-        <h1>Cake Baking and Decoration Course<br>(Confectionery Art Mastery)</h1>
-        <div class="art1">
-          <img src="../images/wedding cake.jpg" alt="Beautiful wedding cake">
-          <div>
-            <p>
-              "This short course empowers participants with essential cake baking
-              and decorating skills, blending hands-on experience with creative
-              techniques for a dynamic and practical learning journey."
-            </p>
-            <p>
-              <strong>Duration:</strong> 1 month <br>
-              Monday 10am – 2pm <br>
-              Wednesday 10am – 2pm <br>
-              Fridays 10am – 2pm
-            </p>
+        <div class="cake-decoration cake-1"></div>
+        <div class="cake-decoration cake-2"></div>
+        
+        <div class="main-cake">
+            <h1>Cake Baking and Decoration Course<br>(Confectionery Art Mastery)</h1>
+            
+            <div class="art1">
+                <img src="../images/wedding cake.jpg" alt="Beautiful wedding cake">
+                <div>
+                    <p>
+                        "This short course empowers participants with essential cake baking
+                        and decorating skills, blending hands-on experience with creative
+                        techniques for a dynamic and practical learning journey."
+                    </p>
+                    
+                    <div class="info-highlight">
+                        <p>
+                            <strong>Duration:</strong> 1 month <br>
+                            Monday 10am – 2pm <br>
+                            Wednesday 10am – 2pm <br>
+                            Fridays 10am – 2pm
+                        </p>
 
-            <p><strong>Course fees:</strong> N250k</p>
+                        <p><strong>Course fees:</strong> N250k</p>
 
-            <p><strong>Registration fee:</strong> N5k</p>
+                        <p><strong>Registration fee:</strong> N5k</p>
 
-            <p>
-              For cake baking and decoration classes, students are required to
-              bring their own choice of ingredients and decoration supplies they wish
-              to work with.
-            </p>
-          </div>
+                        <p>
+                            For cake baking and decoration classes, students are required to
+                            bring their own choice of ingredients and decoration supplies they wish
+                            to work with.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="learn-container">
+                <div class="learn">
+                    <h1>Practical Hands-On Experience</h1>
+                    <h4>Module 1: Introduction to Baking</h4>
+                    <ul>
+                        <li>Overview of Essential Baking Tools and Equipment</li>
+                        <li>Understanding Ingredients and Their Roles</li>
+                        <li>Basic Baking Techniques</li>
+                    </ul>
+
+                    <h4>Module 2: Cake Foundations</h4>
+                    <ul>
+                        <li>Exploring Different Cake Types (Sponge, Butter, Cup cakes etc.)</li>
+                        <li>Perfecting Cake Batter Mixing and Baking</li>
+                        <li>Troubleshooting Common Cake Issues</li>
+                    </ul>
+
+                    <h4>Module 3: Frosting Fundamentals</h4>
+                    <ul>
+                        <li>Various Types of Frostings and Icings</li>
+                        <li>Achieving Smooth and Flawless Cake Frosting</li>
+                        <li>Creative Frosting Techniques</li>
+                    </ul>
+
+                    <h4>Module 4: Decoration Delights</h4>
+                    <ul>
+                        <li>Introduction to Cake Decorating Tools</li>
+                        <li>Basic Piping Techniques</li>
+                        <li>Edible Decorations: Fondant, Gum Paste, and Chocolate</li>
+                    </ul>
+                </div>
+
+                <div class="learn2">
+                    <h4>Module 5: Theme-Based Cake Designs</h4>
+                    <ul>
+                        <li>Designing Cakes for Different Occasions (Birthdays, Weddings, etc.)</li>
+                        <li>Creating Tiered Cakes</li>
+                        <li>Incorporating Colors and Theme</li>
+                    </ul>
+
+                    <h4>Module 7: Equipment Usage</h4>
+                    <ul>
+                        <li>Gain proficiency in using common baking tools and equipment</li>
+                    </ul>
+                    
+                    <h4>Module 8: Time Management</h4>
+                    <ul>
+                        <li>Develop skills for efficient time management in a baking setting</li>
+                    </ul>
+                    
+                    <h4>Module 9: Presentation Skills</h4>
+                    <ul>
+                        <li>Explore basic principles of presenting baked goods attractively</li>
+                    </ul>
+
+                    <h4>Module 10: Business Basics (Optional)</h4>
+                    <ul>
+                        <li>Basics of Starting a Home-Based Cake Decorating Business</li>
+                        <li>Pricing Strategies and Marketing Your Creations</li>
+                    </ul>
+                    
+                    <h4>Practical Sessions:</h4>
+                    <ul>
+                        <li>Hands-on Cake Baking and Decorating Sessions</li>
+                        <li>Project Work: Design and Decorate Your Own Cake</li>
+                        <li>Project Work: Design and Decorate wedding, Birthdays Cakes for clients</li>
+                    </ul>
+                    
+                    <h4>Assessment:</h4>
+                    <ul>
+                        <li>Practical Evaluation of Baked and Decorated Cakes</li>
+                        <li>Written Test on Baking Techniques and Principles</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="apply-btn-container">
+                <button><a href="welcome-apply.html">Apply here</a></button>
+            </div>
         </div>
-
-        <div class="learn">
-          <h1>Practical Hands-On Experience</h1>
-          <h4>Module 1: Introduction to Baking</h4>
-          <ul>
-            <li>Overview of Essential Baking Tools and Equipment</li>
-            <li>Understanding Ingredients and Their Roles</li>
-            <li>Basic Baking Techniques</li>
-          </ul>
-
-          <h4>Module 2: Cake Foundations</h4>
-          <ul>
-            <li>Exploring Different Cake Types (Sponge, Butter, Cup cakes etc.)</li>
-            <li>Perfecting Cake Batter Mixing and Baking</li>
-            <li>Troubleshooting Common Cake Issues</li>
-          </ul>
-
-          <h4>Module 3: Frosting Fundamentals</h4>
-          <ul>
-            <li>Various Types of Frostings and Icings</li>
-            <li>Achieving Smooth and Flawless Cake Frosting</li>
-            <li>Creative Frosting Techniques</li>
-          </ul>
-
-          <h4>Module 4: Decoration Delights</h4>
-          <ul>
-            <li>Introduction to Cake Decorating Tools</li>
-            <li>Basic Piping Techniques</li>
-            <li>Edible Decorations: Fondant, Gum Paste, and Chocolate</li>
-          </ul>
-        </div>
-
-        <div class="learn2">
-          <h4>Module 5: Theme-Based Cake Designs</h4>
-          <ul>
-            <li>Designing Cakes for Different Occasions (Birthdays, Weddings, etc.)</li>
-            <li>Creating Tiered Cakes</li>
-            <li>Incorporating Colors and Theme</li>
-          </ul>
-
-          <h4>Module 7: Equipment Usage</h4>
-          <ul>
-            <li>Gain proficiency in using common baking tools and equipment</li>
-          </ul>
-          
-          <h4>Module 8: Time Management</h4>
-          <ul>
-            <li>Develop skills for efficient time management in a baking setting</li>
-          </ul>
-          
-          <h4>Module 9: Presentation Skills</h4>
-          <ul>
-            <li>Explore basic principles of presenting baked goods attractively</li>
-          </ul>
-
-          <h4>Module 10: Business Basics (Optional)</h4>
-          <ul>
-            <li>Basics of Starting a Home-Based Cake Decorating Business</li>
-            <li>Pricing Strategies and Marketing Your Creations</li>
-          </ul>
-          
-          <h4>Practical Sessions:</h4>
-          <ul>
-            <li>Hands-on Cake Baking and Decorating Sessions</li>
-            <li>Project Work: Design and Decorate Your Own Cake</li>
-            <li>Project Work: Design and Decorate wedding, Birthdays Cakes for clients</li>
-          </ul>
-          
-          <h4>Assessment:</h4>
-          <ul>
-            <li>Practical Evaluation of Baked and Decorated Cakes</li>
-            <li>Written Test on Baking Techniques and Principles</li>
-          </ul>
-        </div>
-      </div>
     </div>
-    <button><a href="welcome-apply.html">Apply here</a></button>
 
-    <script src="../JAVASCRIPT/bakecakes.js"></script>
-</body>
-  
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Newsletter & Academy Section -->
+            <div class="footer-section">
+                <h3>🍰 Sweeten Your Inbox!</h3>
+                <p>
+                    Subscribe for baking tips, academy updates, and exclusive offers!
+                </p>
+
+                <!-- Formspree Form -->
+                <form
+                    class="newsletter-form"
+                    action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST"
+                >
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email..."
+                        required
+                    />
+                    <button type="submit">Subscribe</button>
+                </form>
+
+                <div class="footer-highlights">
+                    <span>🧁 Shop Pastries</span>
+                    <span>👩‍🍳 Baking Classes</span>
+                    <span>🎂 Custom Orders</span>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>📬 Contact Us</h3>
+                <p><strong>Email:</strong> hello@dbcakes.com</p>
+                <p><strong>Phone:</strong> 23480000000</p>
+                <p><strong>Address:</strong> 123 Owerri , Imo State.</p>
+
+                <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
+                <p>Master the art of pastry with our expert-led classes!</p>
+                <a href="#course" class="footer-cta-button">Explore Courses</a>
+            </div>
+
+            <!-- Social & Quick Links -->
+            <div class="footer-section">
+                <h3>🎀 Follow Our Sugar Rush!</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <h3 style="margin-top: 20px">🍪 Quick Links</h3>
+                <p><a href="#">Shop Now</a></p>
+                <p><a href="welcome-apply.html">Class Schedule</a></p>
+                <p><a href="about.html">About Us</a></p>
+            </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="footer-bottom">
+            <p>
+                💖
+                <strong
+                >DbakesCakes: Where Every Bite and Lesson is a Celebration!</strong
+                >
+            </p>
+            <p>© 2024 DbakesCakes | Pastry Shop & Baking Academy</p>
+        </div>
+    </footer>
+
+    <script src="../JAVASCRIPT/bakecakes.js">
+        
+    </script>
+  </body>
 </html>

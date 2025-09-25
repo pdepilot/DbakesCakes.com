@@ -3,36 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/childbake.css">
-    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
-    <script src="../JAVASCRIPT/Childbake.js"></script>
+    <title>Children's Baking Classes | DbakesCakes Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/childbake.css" />
   </head>
   <body>
-    <!-- First Header with Social Icons -->
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Your Navbar -->
     <div class="first-head">
-      <div class="social-container">
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
 
-    <!-- Main Navigation -->
     <div class="sugar" id="navbar">
-      <nav class="nav-container">
-        <img
+      <nav class="cream">
+        <a href="index.html"><img
           src="../images/generated-image.png"
-          alt="Junior Bakers Logo"
+          alt="Logo"
           class="logo"
           width="50px"
-        />
+        /></a>
 
-        <span class="menu-toggle" onclick="toggleMenu()">
-           <i class="fa-solid fa-cake-candles"></i>
+        <span class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-cake-candles" id="menu-icon"></i>
         </span>
 
         <ul id="nav-menu">
@@ -46,87 +49,169 @@
       </nav>
     </div>
 
+    <!-- Children's Baking Content -->
     <div class="style-cookie">
-      <div class="main-cookie">
-        <h1>Children's Baking Classes</h1>
-        <h3>
-          Watch your child's creativity rise in our fun, hands-on baking
-          adventure!
-        </h3>
-        <div class="art1">
-          <img src="../images/childbake.jpg" alt="Delicious cookies" />
-          <div>
-            <p>
-              Get ready for a fun, fully hands-on cooking adventure with our top
-              chefs! Watch your child boost their confidence while learning one
-              of life’s most valuable skills—cooking!
-            </p>
-            <div class="course-details">
-              <h3>Course Details:</h3>
-              <p><strong>Session 1:</strong> July 21st – 31st (Mon – Thu)</p>
-              <p><strong>Session 2:</strong> August 11th – 21st (Mon – Thu)</p>
-              <p><strong>Course Fee:</strong> ₦250,000</p>
-              <p><strong>Time:</strong> 10:00 AM – 12:00 PM</p>
-              <p><strong>Ages:</strong> 7 – 14</p>
-            </div>
-
-            <p>
-              <strong>Course fees:</strong> N250k <br />
-              Registration fee: N5k
-            </p>
-
-            <h2>What Your Child Will Learn:</h2>
-            <p>
-              Our <strong> Baking Adventure</strong> is designed to be
-              <strong>engaging, educational, and delicious!</strong> Each day
-              focuses on essential baking techniques, kitchen safety, and
-              creativity.
-            </p>
+        <div class="child-decoration child-1"></div>
+        <div class="child-decoration child-2"></div>
+        
+        <div class="main-cookie">
+            <h1>Children's Baking Classes</h1>
+            <h3>Watch your child's creativity rise in our fun, hands-on baking adventure!</h3>
             
+            <div class="art1">
+                <img src="../images/childbake.jpg" alt="Children baking" />
+                <div>
+                    <p>
+                        Get ready for a fun, fully hands-on cooking adventure with our top
+                        chefs! Watch your child boost their confidence while learning one
+                        of life's most valuable skills—cooking!
+                    </p>
+                    
+                    <div class="course-details">
+                        <h3>Course Details:</h3>
+                        <p><strong>Session 1:</strong> July 21st – 31st (Mon – Thu)</p>
+                        <p><strong>Session 2:</strong> August 11th – 21st (Mon – Thu)</p>
+                        <p><strong>Course Fee:</strong> ₦250,000</p>
+                        <p><strong>Time:</strong> 10:00 AM – 12:00 PM</p>
+                        <p><strong>Ages:</strong> 7 – 14</p>
+                    </div>
 
-            <div class="note-box">
-              <h3>Note for Parents:</h3>
-              <p>✔ Please inform us of any allergies.</p>
-              <p>✔ Children should bring their aprons and water bottles.</p>
-              <p>✔ All ingredients, tools, and take-home treats provided.</p>
+                    <p>
+                        <strong>Course fees:</strong> N250k <br />
+                        Registration fee: N5k
+                    </p>
+
+                    <h2>What Your Child Will Learn:</h2>
+                    <p>
+                        Our <strong>Baking Adventure</strong> is designed to be
+                        <strong>engaging, educational, and delicious!</strong> Each day
+                        focuses on essential baking techniques, kitchen safety, and
+                        creativity.
+                    </p>
+
+                    <div class="note-box">
+                        <h3>Note for Parents:</h3>
+                        <p>✔ Please inform us of any allergies.</p>
+                        <p>✔ Children should bring their aprons and water bottles.</p>
+                        <p>✔ All ingredients, tools, and take-home treats provided.</p>
+                    </div>
+
+                    <h2>Baking Class Timetable</h2>
+
+                    <div class="day-card">
+                        <h3>Day 1: Introduction to Baking & Kitchen Safety</h3>
+                        <p>
+                            <span class="safety">Safety Focus:</span> Handwashing, measuring
+                            ingredients, oven safety, and kitchen tool identification.
+                        </p>
+                        <p><span class="activity">Baking Activity:</span></p>
+                        <ul>
+                            <li>Decorative sugar cookies (kids personalize their own).</li>
+                        </ul>
+                        <p>
+                            <strong>Special Treat:</strong> Welcome cupcake to enjoy after
+                            class!
+                        </p>
+                    </div>
+
+                    <div class="benefits">
+                        <h3>Why Parents Love Our Baking Class:</h3>
+                        <p>✅ <strong>Builds Confidence</strong> – Kids gain independence in the kitchen.</p>
+                        <p>✅ <strong>Encourages Creativity</strong> – Decorating and recipe customization.</p>
+                        <p>✅ <strong>Teaches Life Skills</strong> – Precision, patience, and kitchen safety.</p>
+                        <p>✅ <strong>Delicious Takeaways</strong> – Every day, they bring home their baked goods!</p>
+                    </div>
+
+                    <div class="register">
+                        <h3>Limited Spots Available – Register Now!</h3>
+                        <p>Give your child a summer filled with fun, flour, and fantastic memories!</p>
+                        <p class="emoji">Let's bake some happiness together with our kids! 🎂✨</p>
+                    </div>
+                </div>
             </div>
-
-            <h2>Baking Class Timetable</h2>
-
-            <div class="day-card">
-              <h3>Day 1: Introduction to Baking & Kitchen Safety</h3>
-              <p>
-                <span class="safety">Safety Focus:</span> Handwashing, measuring
-                ingredients, oven safety, and kitchen tool identification.
-              </p>
-              <p><span class="activity">Baking Activity:</span></p>
-              <ul>
-                <li>Decorative sugar cookies (kids personalize their own).</li>
-              </ul>
-              <p>
-                <strong>Special Treat:</strong> Welcome cupcake to enjoy after
-                class!
-              </p>
+            
+            <div class="apply-btn-container">
+                <button><a href="welcome-apply.html">Apply here</a></button>
             </div>
-
-
-
-            <div class="benefits">
-            <h3>Why Parents Love Our Baking Class:</h3>
-            <p>✅ <strong>Builds Confidence</strong> – Kids gain independence in the kitchen.</p>
-            <p>✅ <strong>Encourages Creativity</strong> – Decorating and recipe customization.</p>
-            <p>✅ <strong>Teaches Life Skills</strong> – Precision, patience, and kitchen safety.</p>
-            <p>✅ <strong>Delicious Takeaways</strong> – Every day, they bring home their baked goods!</p>
-            </div>
-
-            <div class="register">
-            <h3>Limited Spots Available – Register Now!</h3>
-            <p>Give your child a summer filled with fun, flour, and fantastic memories!</p>
-            <p class="emoji">Let's bake some happiness together with our kids! 🎂✨</p>
         </div>
-        </div>
-      </div>
     </div>
-    <button><a href="welcome-apply.html">Apply here</a></button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Newsletter & Academy Section -->
+            <div class="footer-section">
+                <h3>🍰 Sweeten Your Inbox!</h3>
+                <p>
+                    Subscribe for baking tips, academy updates, and exclusive offers!
+                </p>
+
+                <!-- Formspree Form -->
+                <form
+                    class="newsletter-form"
+                    action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST"
+                >
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email..."
+                        required
+                    />
+                    <button type="submit">Subscribe</button>
+                </form>
+
+                <div class="footer-highlights">
+                    <span>🧁 Shop Pastries</span>
+                    <span>👩‍🍳 Baking Classes</span>
+                    <span>🎂 Custom Orders</span>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>📬 Contact Us</h3>
+                <p><strong>Email:</strong> hello@dbcakes.com</p>
+                <p><strong>Phone:</strong> 23480000000</p>
+                <p><strong>Address:</strong> 123 Owerri , Imo State.</p>
+
+                <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
+                <p>Master the art of pastry with our expert-led classes!</p>
+                <a href="#course" class="footer-cta-button">Explore Courses</a>
+            </div>
+
+            <!-- Social & Quick Links -->
+            <div class="footer-section">
+                <h3>🎀 Follow Our Sugar Rush!</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <h3 style="margin-top: 20px">🍪 Quick Links</h3>
+                <p><a href="#">Shop Now</a></p>
+                <p><a href="welcome-apply.html">Class Schedule</a></p>
+                <p><a href="about.html">About Us</a></p>
+            </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="footer-bottom">
+            <p>
+                💖
+                <strong
+                >DbakesCakes: Where Every Bite and Lesson is a Celebration!</strong
+                >
+            </p>
+            <p>© 2024 DbakesCakes | Pastry Shop & Baking Academy</p>
+        </div>
+    </footer>
+
+    <script src="../JAVASCRIPT/childbake.js">
+       
+    </script>
   </body>
 </html>
