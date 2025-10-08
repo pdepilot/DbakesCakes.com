@@ -1237,7 +1237,7 @@ nav ul li a:hover::after {
 /* Quantum WhatsApp Button */
 .whatsapp-chat {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 10px;
   z-index: 999;
   background: linear-gradient(135deg, #25D366, #128C7E);
