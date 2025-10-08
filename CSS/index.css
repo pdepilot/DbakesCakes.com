@@ -1234,15 +1234,11 @@ nav ul li a:hover::after {
 }
 
 
-
-
-
-
 /* Quantum WhatsApp Button */
 .whatsapp-chat {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 10px;
   z-index: 999;
   background: linear-gradient(135deg, #25D366, #128C7E);
   border-radius: 50%;
@@ -1301,22 +1297,32 @@ nav ul li a:hover::after {
 
 
 
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
+/* RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+  .c1 {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
   }
-
-  .newsletter-form {
-    flex-direction: column;
+  
+  .hero {
+    gap: 40px;
+  }
+  
+  .hero1 h2 {
+    font-size: 24px;
+  }
+  
+  .overlay-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .overlay-content p {
+    font-size: 1.1rem;
   }
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 768px) {
- .menu-toggle {
+  .menu-toggle {
     display: block;
   }
 
@@ -1349,13 +1355,116 @@ nav ul li a:hover::after {
 
   .cake-img {
     margin-top: 20px;
+    width: 180px;
+    height: 180px;
   }
 
-   #scrollTopBtn {
-      bottom: 150px;
-      right: 20px;
-    }
+  .cake-img a {
+    width: 60px;
+    height: 60px;
+  }
+
+  .parent {
+    height: 80vh;
+  }
+
+  .overlay-content h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-content p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .c-header h1 {
+    font-size: 32px;
+  }
+
+  .c1 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    padding: 4px 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  #scrollTopBtn {
+    bottom: 150px;
+    right: 20px;
+  }
+
+  .review-heading {
+    font-size: 1.5rem;
+  }
 }
 
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 150px;
+    gap: 30px;
+  }
 
+  .hero1 h2 {
+    font-size: 20px;
+  }
+
+  .hero1 p {
+    font-size: 14px;
+  }
+
+  .cake-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cake-img a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .overlay-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.9rem;
+  }
+
+  .c-header h1 {
+    font-size: 28px;
+  }
+
+  .c1 p {
+    font-size: 0.85rem;
+  }
+
+  .review-card {
+    padding: 1.5rem;
+  }
+
+  .review-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav-btn {
+    font-size: 1.5rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .prev { left: -5px; }
+  .next { right: -5px; }
+}
 

@@ -29,10 +29,6 @@ window.addEventListener("load", () => {
   document.body.classList.add("loaded");
 });
 
-
-
-
-
 const lightboxLinks = document.querySelectorAll('.cake-img a');
 const lightboxModal = document.getElementById('lightbox-modal');
 const lightboxImg = document.getElementById('lightbox-img');
@@ -259,21 +255,6 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % total;
   renderSlider();
 }, 5000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
