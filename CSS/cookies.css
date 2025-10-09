@@ -521,7 +521,8 @@ button a {
   }
 
   .social-icons {
-    margin-left: 150px;
+    position: relative;
+    margin-left: 180px;
     margin-top: 2rem;
     justify-content: flex-start;
   }
