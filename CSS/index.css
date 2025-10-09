@@ -1636,7 +1636,6 @@ nav ul li a:hover::after {
     right: -5px;
   }
 
-  /* Responsive adjustments for write-up */
   .catchy-writeup {
     padding: 10px 12px;
   }

@@ -503,7 +503,7 @@ button a {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 0;
     width: 100%;
     background-color: white;
@@ -631,7 +631,7 @@ button a {
 .footer h3 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: #d23c6e; /* Berry pink headers */
+  color: #d23c6e; 
   font-weight: 600;
 }
 
