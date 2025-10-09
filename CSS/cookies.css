@@ -59,6 +59,7 @@ h4 {
   transform: translateY(-3px);
 }
 
+/* Navbar Container */
 .sugar {
   background-color: #f5c8c8;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -74,6 +75,10 @@ h4 {
   padding: 5px 0;
 }
 
+.sugar.scrolled .logo {
+  height: 50px;
+}
+
 .cream {
   display: flex;
   justify-content: space-between;
@@ -81,12 +86,12 @@ h4 {
   padding: 15px 5%;
   max-width: 1400px;
   margin: 0 auto;
-  position: relative;
+  transition: all 0.3s ease;
 }
 
 .logo {
   height: 60px;
-  width: auto;
+  width: auto !important;
   transition: all 0.3s ease;
 }
 
@@ -95,15 +100,22 @@ h4 {
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--dark);
-  background: none;
-  border: none;
-  z-index: 1001;
 }
 
+/* Navbar Menu */
 nav ul {
   display: flex;
-  list-style: none;
-  gap: 20px;
+  list-style: none; 
+  gap: 30px;
+  padding-left: 0; 
+}
+
+nav ul li {
+  padding-left: 0; 
+}
+
+nav ul li::before {
+  content: none; 
 }
 
 nav ul li a {
@@ -115,7 +127,6 @@ nav ul li a {
   letter-spacing: 1px;
   position: relative;
   transition: color 0.3s;
-  padding: 5px 0;
 }
 
 nav ul li a:hover {
@@ -127,7 +138,7 @@ nav ul li a::after {
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   background-color: var(--primary);
   transition: width 0.3s;
@@ -479,45 +490,31 @@ button a {
   animation-delay: 0.6s;
 }
 
+
+
 /* Mobile Menu Styles - Fixed to slide from left */
 @media (max-width: 768px) {
+  @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    position: relative;
-    z-index: 1001; 
   }
 
   nav ul {
-    position: fixed;
-    top: 0;
-    left: -100%; 
-    width: 80%;
-    max-width: 300px;
-    height: 100vh;
-    background-color: white;
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 6rem 2rem 2rem;
-    box-shadow: 5px 0 30px rgba(0, 0, 0, 0.1); 
-    transition: left 0.4s ease; 
-    z-index: 1000;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
 
   nav ul.show {
-    left: 0; /* Slide in from left */
+    display: flex;
   }
-
-  /* Add overlay when menu is open */
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-  }
+}
 
   .overlay.show {
     display: block;
