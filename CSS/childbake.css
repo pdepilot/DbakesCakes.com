@@ -518,16 +518,12 @@ button a {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 80px;
     left: 0;
     width: 100%;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    border-top: 1px solid #eee0e0;
-    animation: dropdown 0.3s ease forwards;
-    transform-origin: top center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
 
   @keyframes dropdown {
@@ -545,18 +541,7 @@ button a {
     display: flex;
   }
 
-  nav ul li {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  nav ul li a {
-    font-size: 1.1rem;
-    padding: 10px 0;
-    display: block;
-    width: 100%;
-  }
-
+  
   /* Content adjustments */
   .style-cookie {
     padding: 3rem 3%;
