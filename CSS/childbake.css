@@ -34,7 +34,7 @@ h4 {
   color: var(--dark);
 }
 
-/* ===== Header & Navigation ===== */
+/* Header Styles */
 .first-head {
   background-color: #eee0e0;
   padding: 10px 0;
@@ -45,7 +45,6 @@ h4 {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 5px 0;
 }
 
 .social-icons a {
@@ -85,13 +84,13 @@ h4 {
   padding: 15px 5%;
   max-width: 1400px;
   margin: 0 auto;
-  position: relative;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .logo {
   height: 60px;
-  width: auto;
+  width: auto !important;
   transition: all 0.3s ease;
 }
 
@@ -99,16 +98,24 @@ h4 {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--dark);
-  background: none;
-  border: none;
-  z-index: 1001; /* Ensure it's above the menu */
+  color: var(--primary);
+  z-index: 1001;
 }
 
+/* Navbar specific styles */
 nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
+  padding-left: 0;
+}
+
+nav ul li {
+  padding-left: 0;
+}
+
+nav ul li::before {
+  content: none;
 }
 
 nav ul li a {
@@ -120,7 +127,6 @@ nav ul li a {
   letter-spacing: 1px;
   position: relative;
   transition: color 0.3s;
-  padding: 5px 0;
 }
 
 nav ul li a:hover {
@@ -132,7 +138,7 @@ nav ul li a::after {
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   background-color: var(--primary);
   transition: width 0.3s;
@@ -370,9 +376,9 @@ li {
 }
 
 li::before {
-  content: "";
+  content: "•";
   position: absolute;
-  left: 0;
+  left: 1rem;
   color: var(--cookie-accent);
   font-size: 1.2rem;
   top: 0;
@@ -498,62 +504,67 @@ button a {
   animation-delay: 0.6s;
 }
 
-/* Mobile Menu Styles - Fixed to slide from left */
-@media (max-width: 768px) {
+/* ========================= */
+/* RESPONSIVE DESIGN STYLES */
+/* ========================= */
+
+/* Mobile Menu Styles - Updated to dropdown from top */
+@media (max-width: 767px) {
   .menu-toggle {
     display: block;
-    position: relative;
-    z-index: 1001;
   }
 
   nav ul {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 80%;
-    max-width: 300px;
-    height: 100vh;
-    background-color: white;
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 6rem 2rem 2rem;
-    box-shadow: 5px 0 30px rgba(0, 0, 0, 0.1);
-    transition: left 0.4s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    border-top: 1px solid #eee0e0;
+    animation: dropdown 0.3s ease forwards;
+    transform-origin: top center;
+  }
+
+  @keyframes dropdown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px) scaleY(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scaleY(1);
+    }
   }
 
   nav ul.show {
-    left: 0;
+    display: flex;
   }
 
-  /* Add overlay when menu is open */
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+  nav ul li {
+    margin-bottom: 1rem;
+    text-align: center;
   }
 
-  .overlay.show {
+  nav ul li a {
+    font-size: 1.1rem;
+    padding: 10px 0;
     display: block;
+    width: 100%;
   }
 
-  .social-icons {
-    margin-left: 190px;
-    margin-top: 2rem;
-    justify-content: flex-start;
-  }
-
+  /* Content adjustments */
   .style-cookie {
-    padding: 2rem 3%;
+    padding: 3rem 3%;
   }
 
   .main-cookie {
     padding: 2.5rem;
+    border-radius: 20px;
   }
 
   .main-cookie h1 {
@@ -573,9 +584,34 @@ button a {
   }
 }
 
-@media (max-width: 576px) {
+/* Tablet Landscape (768px to 991px) */
+@media (max-width: 991px) {
+  .main-cookie h1 {
+    font-size: 2.5rem;
+  }
+
+  .art1 {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .main-cookie {
+    padding: 3rem;
+  }
+
   .style-cookie {
-    padding: 3rem 1.5rem;
+    padding: 4rem 4%;
+  }
+
+  .art1 img {
+    max-height: 400px;
+  }
+}
+
+/* Mobile (575px and below) */
+@media (max-width: 575px) {
+  .style-cookie {
+    padding: 2rem 1.5rem;
   }
 
   .main-cookie {
@@ -585,10 +621,25 @@ button a {
 
   .main-cookie h1 {
     font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-cookie h1::after {
+    width: 120px;
+    height: 4px;
   }
 
   .art1 p {
     font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .course-details,
+  .note-box,
+  .day-card,
+  .benefits,
+  .register {
+    padding: 1.5rem;
   }
 
   button {
@@ -596,29 +647,44 @@ button a {
     font-size: 1.1rem;
   }
 
+  .cream {
+    padding: 15px 3%;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
   .child-decoration {
     display: none;
   }
-
-  nav ul {
-    width: 85%;
-  }
 }
 
-@media (max-width: 992px) {
+/* Small Mobile (375px and below) */
+@media (max-width: 375px) {
+  .style-cookie {
+    padding: 1.5rem 1rem;
+  }
+
+  .main-cookie {
+    padding: 1.5rem;
+  }
+
+  .main-cookie h1 {
+    font-size: 1.6rem;
+  }
+
   .art1 {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
 
-  .main-cookie h1 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .main-cookie h1 {
-    font-size: 3rem;
+  .course-details,
+  .note-box,
+  .day-card,
+  .benefits,
+  .register {
+    padding: 1.25rem;
   }
 }
 
@@ -760,4 +826,15 @@ button a {
 .footer-cta-button:hover {
   background: #b8325c;
   text-decoration: none !important;
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
 }

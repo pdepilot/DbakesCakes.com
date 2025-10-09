@@ -6,17 +6,16 @@
     <title>Children's Baking Classes | DbakesCakes Academy</title>
     <link rel="icon" href="images/generated-image.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CSS/childbake.css" />
+    <link rel="stylesheet" href="./CSS/childbake.css">
+    
   </head>
   <body>
-    <!-- Overlay for mobile menu -->
-    <div class="overlay" id="overlay"></div>
-
-    <!-- Your Navbar -->
+    <!-- Header and Navbar -->
     <div class="first-head">
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -28,23 +27,22 @@
 
     <div class="sugar" id="navbar">
       <nav class="cream">
-        <a href="index.html"><img
+        <a href=""><img
           src="images/generated-image.png"
           alt="Logo"
           class="logo"
           width="50px"
         /></a>
-
-        <span class="menu-toggle" id="menuToggle">
-          <i class="fa-solid fa-cake-candles" id="menu-icon"></i>
+        <span class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-cake-candles"></i>
         </span>
 
         <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">Meet The CEO</a></li>
           <li><a href="mission.html">Our Mission</a></li>
-          <li><a href="#course">Courses</a></li>
-          <li><a href="welcome-apply.html" class="active">Apply Now</a></li>
+          <li><a href="index.html#course">Courses</a></li>
+          <li><a href="welcome-apply.html">Apply Now</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
@@ -60,7 +58,7 @@
             <h3>Watch your child's creativity rise in our fun, hands-on baking adventure!</h3>
             
             <div class="art1">
-                <img src="../images/childbake.jpg" alt="Children baking" />
+                <img src="images/childbake.jpg" alt="Children baking" />
                 <div>
                     <p>
                         Get ready for a fun, fully hands-on cooking adventure with our top
@@ -178,7 +176,7 @@
 
                 <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
                 <p>Master the art of pastry with our expert-led classes!</p>
-                <a href="#course" class="footer-cta-button">Explore Courses</a>
+                <a href="index.html#course" class="footer-cta-button">Explore Courses</a>
             </div>
 
             <!-- Social & Quick Links -->
@@ -211,8 +209,6 @@
         </div>
     </footer>
 
-    <script src="JAVASCRIPT/childbake.js">
-       
-    </script>
+    <script src="./JAVASCRIPT/childbake.js"></script>
   </body>
 </html>
