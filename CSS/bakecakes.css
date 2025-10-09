@@ -102,7 +102,7 @@ h4 {
   color: var(--dark);
   background: none;
   border: none;
-  z-index: 1001; /* Ensure it's above the menu */
+  z-index: 1001; 
 }
 
 nav ul {
@@ -151,7 +151,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* Cake Course Page Styles - Matching Other Pages */
+
 .style-bakecake {
   padding: 5rem 5%;
   max-width: 1400px;
