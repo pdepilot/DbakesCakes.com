@@ -850,18 +850,14 @@ button a {
   }
 }
 
-/* FIXED: Scroll to Top Button Styles */
+/* Scroll to Top Button */
 .scroll-to-top {
   position: fixed;
   bottom: 100px;
   right: 30px;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(
-    135deg,
-    var(--cookie-primary),
-    var(--cookie-accent)
-  );
+  width: 50px;
+  height: 50px;
+  background: #ee9595;
   color: white;
   border: none;
   border-radius: 50%;
@@ -870,33 +866,25 @@ button a {
   justify-content: center;
   font-size: 1.5rem;
   cursor: pointer;
-  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.4);
+  box-shadow: 0 5px 15px rgba(139, 69, 19, 0.4);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform: translateY(20px) scale(0.9);
+  transition: all 0.3s ease;
+  transform: translateY(20px);
 }
 
 .scroll-to-top.show {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
 .scroll-to-top:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.6);
-  background: linear-gradient(
-    135deg,
-    var(--cookie-accent),
-    var(--cookie-primary)
-  );
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(139, 69, 19, 0.6);
 }
 
-.scroll-to-top:active {
-  transform: translateY(-2px) scale(1.02);
-}
 
 /* NEW: Reveal on Scroll Animations */
 .reveal {
