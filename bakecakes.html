@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cake Baking and Decoration Course | DbakesCakes Academy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="CSS/bakecakes.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
@@ -14,9 +14,41 @@
     <meta name="description" content="Join our Cake Baking and Decoration Course at DbakesCakes Academy. Learn essential baking skills, creative decorating techniques, and hands-on experience to master the art of confectionery. Enroll now for a sweet journey into cake artistry!" />
     <meta name="keywords" content="Cake Baking Course, Cake Decoration Course, Confectionery Art, Baking Classes, Cake Decorating Techniques, Hands-on Baking, Cake Design, Baking Academy, Pastry School, Cake Artistry" />
     <meta name="author" content="DbakesCakes Academy" />
+    <link rel="stylesheet" href="./CSS/bakecakes.css">
   </head>
   <body>
-    
+    <!-- Header and Navbar -->
+    <div class="first-head">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="sugar" id="navbar">
+      <nav class="cream">
+        <a href=""><img
+          src="images/generated-image.png"
+          alt="Logo"
+          class="logo"
+          width="50px"
+        /></a>
+        <span class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-cake-candles"></i>
+        </span>
+
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Meet The CEO</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="index.html#course">Courses</a></li>
+          <li><a href="welcome-apply.html" class="active">Apply Now</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Cake Course Content -->
     <div class="style-bakecake">
@@ -179,7 +211,7 @@
 
                 <h3 style="margin-top: 20px">🎓 Baking Academy</h3>
                 <p>Master the art of pastry with our expert-led classes!</p>
-                <a href="#course" class="footer-cta-button">Explore Courses</a>
+                <a href="index.html#course" class="footer-cta-button">Explore Courses</a>
             </div>
 
             <!-- Social & Quick Links -->
@@ -213,7 +245,7 @@
     </footer>
 
     <script src="JAVASCRIPT/bakecakes.js">
-        
+       
     </script>
   </body>
 </html>
