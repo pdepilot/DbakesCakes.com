@@ -15,6 +15,7 @@
     <meta name="keywords" content="Cake Baking Course, Cake Decoration Course, Confectionery Art, Baking Classes, Cake Decorating Techniques, Hands-on Baking, Cake Design, Baking Academy, Pastry School, Cake Artistry" />
     <meta name="author" content="DbakesCakes Academy" />
     <link rel="stylesheet" href="./CSS/bakecakes.css">
+    
   </head>
   <body>
     <!-- Header and Navbar -->
@@ -56,9 +57,9 @@
         <div class="cake-decoration cake-2"></div>
         
         <div class="main-cake">
-            <h1>Cake Baking and Decoration Course<br>(Confectionery Art Mastery)</h1>
+            <h1 class="reveal">Cake Baking and Decoration Course<br>(Confectionery Art Mastery)</h1>
             
-            <div class="art1">
+            <div class="art1 reveal">
                 <img src="images/wedding cake.jpg" alt="Beautiful wedding cake">
                 <div>
                     <p>
@@ -89,7 +90,7 @@
             </div>
 
             <div class="learn-container">
-                <div class="learn">
+                <div class="learn reveal-left">
                     <h1>Practical Hands-On Experience</h1>
                     <h4>Module 1: Introduction to Baking</h4>
                     <ul>
@@ -120,7 +121,7 @@
                     </ul>
                 </div>
 
-                <div class="learn2">
+                <div class="learn2 reveal-right">
                     <h4>Module 5: Theme-Based Cake Designs</h4>
                     <ul>
                         <li>Designing Cakes for Different Occasions (Birthdays, Weddings, etc.)</li>
@@ -164,7 +165,7 @@
                 </div>
             </div>
             
-            <div class="apply-btn-container">
+            <div class="apply-btn-container reveal-zoom">
                 <button><a href="welcome-apply.html">Apply here</a></button>
             </div>
         </div>
@@ -244,6 +245,11 @@
         </div>
     </footer>
 
+    <!-- FIXED: Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <!-- WhatsApp Chat Bubble -->
     <a href="https://wa.me/2349064296917" class="whatsapp-chat" target="_blank">
         <img
@@ -252,8 +258,7 @@
         />
     </a>
 
-    <script src="JAVASCRIPT/bakecakes.js">
-       
+    <script src="./JAVASCRIPT/bakecakes.js">
     </script>
   </body>
 </html>

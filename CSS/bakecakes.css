@@ -1,3 +1,4 @@
+/* Your existing CSS code here */
 :root {
   --primary: #0e0d0d;
   --secondary: #e8a87c;
@@ -523,8 +524,6 @@ button a {
     display: flex;
   }
 
-
-
   /* Content adjustments */
   .style-bakecake {
     padding: 3rem 3%;
@@ -796,7 +795,6 @@ button a {
   text-decoration: none !important;
 }
 
-
 /* Quantum WhatsApp Button */
 .whatsapp-chat {
   position: fixed;
@@ -841,7 +839,6 @@ button a {
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
 }
 
-
 @media (max-width: 767px) {
   .footer-container {
     flex-direction: column;
@@ -850,5 +847,119 @@ button a {
 
   .newsletter-form {
     flex-direction: column;
+  }
+}
+
+/* FIXED: Scroll to Top Button Styles */
+.scroll-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    135deg,
+    var(--cookie-primary),
+    var(--cookie-accent)
+  );
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.4);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateY(20px) scale(0.9);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.6);
+  background: linear-gradient(
+    135deg,
+    var(--cookie-accent),
+    var(--cookie-primary)
+  );
+}
+
+.scroll-to-top:active {
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* NEW: Reveal on Scroll Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-zoom {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s ease;
+}
+
+.reveal-zoom.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .scroll-to-top {
+    bottom: 90px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 80px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
   }
 }
