@@ -105,17 +105,17 @@ h4 {
 /* Navbar Menu */
 nav ul {
   display: flex;
-  list-style: none; 
+  list-style: none;
   gap: 30px;
-  padding-left: 0; 
+  padding-left: 0;
 }
 
 nav ul li {
-  padding-left: 0; 
+  padding-left: 0;
 }
 
 nav ul li::before {
-  content: none; 
+  content: none;
 }
 
 nav ul li a {
@@ -368,9 +368,9 @@ li::before {
 
 .apply-btn-container {
   text-align: center;
-  margin-top: 1rem; 
+  margin-top: 1rem;
   position: relative;
-  padding-bottom: 1rem; 
+  padding-bottom: 1rem;
 }
 
 .apply-btn-container::before {
@@ -490,31 +490,29 @@ button a {
   animation-delay: 0.6s;
 }
 
-
-
 /* Mobile Menu Styles - Fixed to slide from left */
 @media (max-width: 768px) {
   @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+    .menu-toggle {
+      display: block;
+    }
 
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
 
-  nav ul.show {
-    display: flex;
+    nav ul.show {
+      display: flex;
+    }
   }
-}
 
   .overlay.show {
     display: block;
@@ -580,7 +578,6 @@ button a {
   .cookie-decoration {
     display: none;
   }
-
 }
 
 @media (max-width: 992px) {
@@ -632,7 +629,7 @@ button a {
 .footer h3 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: #d23c6e; 
+  color: #d23c6e;
   font-weight: 600;
 }
 
@@ -755,7 +752,7 @@ button a {
   .footer-container {
     gap: 20px;
   }
-  
+
   .footer-section {
     flex: 1 1 calc(50% - 20px);
     min-width: 200px;
@@ -766,33 +763,33 @@ button a {
   .footer {
     padding: 30px 15px;
   }
-  
+
   .footer-container {
     flex-direction: column;
     gap: 25px;
   }
-  
+
   .footer-section {
     flex: 1 1 100%;
     text-align: center;
   }
-  
+
   .newsletter-form {
     justify-content: center;
   }
-  
+
   .newsletter-form input {
     min-width: 150px;
   }
-  
+
   .social-links {
     justify-content: center;
   }
-  
+
   .footer-highlights {
     justify-content: center;
   }
-  
+
   .footer h3 {
     font-size: 20px;
   }
@@ -802,38 +799,38 @@ button a {
   .footer {
     padding: 25px 10px;
   }
-  
+
   .footer h3 {
     font-size: 18px;
   }
-  
+
   .footer p,
   .footer a,
   .footer input {
     font-size: 14px;
   }
-  
+
   .newsletter-form {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .newsletter-form input {
     width: 100%;
     max-width: 280px;
     margin-bottom: 10px;
   }
-  
+
   .footer-highlights {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .footer-highlights span {
     width: 100%;
     text-align: center;
   }
-  
+
   .footer-bottom {
     font-size: 13px;
   }
@@ -883,7 +880,6 @@ button a {
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
 }
 
-
 /* Quantum WhatsApp Button */
 .whatsapp-chat {
   position: fixed;
@@ -927,4 +923,3 @@ button a {
   height: 32px;
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
 }
-
