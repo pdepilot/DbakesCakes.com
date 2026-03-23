@@ -1,5 +1,4 @@
-
-        // Toggle mobile menu
+// Toggle mobile menu
         function toggleMenu() {
             const menu = document.getElementById('nav-menu');
             menu.classList.toggle('show');

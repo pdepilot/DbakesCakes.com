@@ -6,6 +6,9 @@
   --light: #f8f9fa;
   --text: #333333;
   --cream: #fff5e6;
+  --gold: #f9a826;
+  --rose: #ff5e7c;
+  --caramel: #d4a373;
 }
 
 * {
@@ -22,122 +25,219 @@ body {
   line-height: 1.6;
 }
 
-/* Preloader */
+/* ===== MODERN PRELOADER ===== */
 #preloader {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #0a0a0a;
+  background: linear-gradient(135deg, #fff9f0 0%, #ffe6e6 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition: opacity 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1), visibility 0.8s ease;
+  backdrop-filter: blur(2px);
 }
 
-.cooking-loader {
-  position: relative;
+.modern-loader {
   text-align: center;
-}
-
-.pot {
-  width: 120px;
-  height: 80px;
-  background: #3a2f2f;
-  border-radius: 60% 60% 30% 30%;
   position: relative;
-  box-shadow: 0 10px 30px rgba(255, 100, 0, 0.3);
-  animation: potShake 3s infinite ease-in-out;
 }
 
-.spoon {
+.loader-icon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 30px;
+}
+
+.loader-icon .cake-layer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  background: linear-gradient(135deg, #f9a826, #ff6b6b);
+  border-radius: 10px 10px 8px 8px;
+  animation: buildCake 1.8s ease-in-out infinite alternate;
+}
+
+.layer1 {
+  height: 25px;
+  width: 80px;
+  bottom: 0;
+  animation-delay: 0s;
+  background: linear-gradient(135deg, #e6b17e, #d49c6c);
+  border-radius: 10px 10px 5px 5px;
+}
+
+.layer2 {
+  height: 25px;
+  width: 70px;
+  bottom: 25px;
+  animation-delay: 0.2s;
+  background: linear-gradient(135deg, #f0bc8a, #e0a86e);
+  border-radius: 8px 8px 5px 5px;
+}
+
+.layer3 {
+  height: 25px;
   width: 60px;
-  height: 10px;
-  background: #8b5e3c;
-  border-radius: 5px;
-  position: absolute;
-  top: -15px;
-  left: 30px;
-  transform-origin: left center;
-  animation: spinSpoon 3.5s infinite linear;
+  bottom: 50px;
+  animation-delay: 0.4s;
+  background: linear-gradient(135deg, #fad1a0, #f0b87a);
+  border-radius: 8px 8px 5px 5px;
 }
 
-.fire-glow {
-  width: 100px;
-  height: 40px;
-  background: radial-gradient(
-    circle,
-    #ff4500 20%,
-    #ff8c00 60%,
-    transparent 80%
-  );
+.cherry {
   position: absolute;
-  bottom: -30px;
-  left: 10px;
-  filter: blur(5px);
-  animation: flickerFire 3.3s infinite alternate;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background: #ff4d6d;
   border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(255, 77, 109, 0.4);
+  animation: pulseCherry 1s ease-in-out infinite alternate;
 }
 
-.loading-text {
-  margin-top: 20px;
-  color: #ffd87a;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.3rem;
+.cherry::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 4px;
+  width: 6px;
+  height: 10px;
+  background: #6b4c3b;
+  border-radius: 2px;
+  transform: rotate(-15deg);
+}
+
+.cherry::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  width: 4px;
+  height: 8px;
+  background: #6b4c3b;
+  border-radius: 2px;
+  transform: rotate(10deg);
+}
+
+.loader-sparkles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #ffd966;
+  border-radius: 50%;
+  opacity: 0;
+  animation: sparkleFloat 2s infinite;
+}
+
+.sparkle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.sparkle:nth-child(2) { top: 15%; left: 85%; animation-delay: 0.4s; width: 8px; height: 8px; }
+.sparkle:nth-child(3) { top: 70%; left: 20%; animation-delay: 0.8s; }
+.sparkle:nth-child(4) { top: 65%; left: 75%; animation-delay: 1.2s; width: 5px; height: 5px; }
+.sparkle:nth-child(5) { top: 85%; left: 45%; animation-delay: 1.6s; }
+.sparkle:nth-child(6) { top: 10%; left: 50%; animation-delay: 0.2s; width: 7px; height: 7px; }
+.sparkle:nth-child(7) { top: 45%; left: 5%; animation-delay: 1s; }
+.sparkle:nth-child(8) { top: 50%; left: 92%; animation-delay: 1.4s; }
+
+.loading-text-modern {
+  margin-top: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff6b6b, #f9a826);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   letter-spacing: 1px;
 }
 
-.dot {
-  animation: bounceDots 3.5s infinite;
+.loading-dots {
+  display: inline-block;
 }
 
-.dot:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.dot:nth-child(3) {
-  animation-delay: 0.4s;
+.loading-dots span {
+  animation: bounceDot 1.2s infinite;
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
-@keyframes potShake {
-  0%,
+.loading-dots span:nth-child(1) { animation-delay: 0s; }
+.loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+.loader-subtitle {
+  font-size: 0.9rem;
+  color: #b9805a;
+  margin-top: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@keyframes buildCake {
+  0% {
+    transform: translateX(-50%) scaleY(0.85);
+    opacity: 0.7;
+  }
   100% {
-    transform: rotate(0deg);
+    transform: translateX(-50%) scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseCherry {
+  0% {
+    transform: translateX(-50%) scale(0.95);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes sparkleFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
   }
   25% {
-    transform: rotate(1deg);
-  }
-  75% {
-    transform: rotate(-1deg);
-  }
-}
-
-@keyframes spinSpoon {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes flickerFire {
-  0% {
     opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0.6;
-    transform: scale(1.1);
-  }
-}
-
-@keyframes bounceDots {
-  0%,
-  100% {
-    transform: translateY(0);
+    transform: translateY(-8px) scale(1);
   }
   50% {
-    transform: translateY(-6px);
+    opacity: 0.8;
+    transform: translateY(-15px) scale(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-25px) scale(0.6);
+  }
+}
+
+@keyframes bounceDot {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-8px);
+    opacity: 1;
   }
 }
 
